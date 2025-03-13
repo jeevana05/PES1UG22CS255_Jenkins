@@ -7,6 +7,7 @@ pipeline {
                 script {
                     build 'PES1UG22CS255-1'
                     sh 'g++ main.cpp -o output'
+                    sh 'g++ -o invalid_output main_invalid.cpp'
                 }
             }
         }
